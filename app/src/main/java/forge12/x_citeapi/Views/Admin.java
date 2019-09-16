@@ -19,7 +19,7 @@ import forge12.x_citeapi.interfaces.CallableAction;
 /**
  * Handle the Admin View
  */
-public class Admin extends AppCompatActivity {
+public class Adminnn extends AppCompatActivity {
     /**
      * Goto Sync View
      */
