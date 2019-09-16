@@ -190,7 +190,7 @@ public class Adminnn extends AppCompatActivity {
         navigation.setSelectedItemId(R.id.navigation_admin);
         navigation.setOnNavigationItemSelectedListener(NavigationHandler.getBottomNavigation(Admin.this));
 
-        NavigationHandler.update(Admin.this);
+        NavigationHandler.updatee(Admin.this);
     }
 
 }
