@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/ui_white"
+    android:contentInsetStart="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetEnd="0dp"
+    android:contentInsetRight="0dp"
+    android:padding="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|start"
+            android:layout_weight="1"
+            android:paddingEnd="20dp"
+            app:srcCompat="@drawable/logo_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingEnd="10dp"
+                android:text="SMART"
+                android:textAllCaps="true"
+                android:textColor="@color/ui_grey" />
+
+            <ImageView
+                android:id="@+id/toolbar_image_spacer"
+                android:layout_width="wrap_content"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/toolbar_arrow" />
+
+            <TextView
+                android:id="@+id/toolbar_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="TextView"
+                android:textColor="@color/ui_grey"
+                android:textAllCaps="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_toolbar_dashboard"
+            style="@style/button_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical|end"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_home_white_24dp" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

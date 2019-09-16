@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_blue"
+    tools:context=".Views.ContractPersonal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/header_toolbar" />
+
+        <include
+            android:id="@+id/header_contract"
+            layout="@layout/header_contract" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            style="@style/scrollview"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout style="@style/row_nobg">
+
+                    <LinearLayout
+                        android:id="@+id/snippet_personal_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_personal"
+                            layout="@layout/snippet_personal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_invoice_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_invoice_recipient"
+                            layout="@layout/snippet_invoice_recipient" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_business_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_business_information"
+                            layout="@layout/snippet_business_information" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_bank_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_bank"
+                            layout="@layout/snippet_bank" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_strom_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_strom"
+                            layout="@layout/snippet_strom" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_gas_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_gas"
+                            layout="@layout/snippet_gas" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_product_info_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_productinformation"
+                            layout="@layout/snippet_productinformation" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_leaser_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_leaser"
+                            layout="@layout/snippet_leaser" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_lessor_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_lessor"
+                            layout="@layout/snippet_lessor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_kaution_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_kaution"
+                            layout="@layout/snippet_kaution" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/snippet_signature_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/snippet_signature"
+                            layout="@layout/snippet_signature" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/save_container"
+                    style="@style/row_nobg">
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table"
+                        android:layout_marginBottom="60dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:id="@+id/row_save"
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/buttonSave"
+                                style="@style/button_blue"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/save_contract" />
+
+                            <Button
+                                android:id="@+id/buttonSaveAndSync"
+                                style="@style/button_blue"
+                                android:text="@string/save_and_sync_contract" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/row_close"
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="60dp"
+                            android:visibility="gone">
+
+                            <Button
+                                android:id="@+id/buttonClose"
+                                style="@style/button_blue"
+                                android:text="@string/close_contract" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_contract"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        android:visibility="gone"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/navigation_contract" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>

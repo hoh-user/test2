@@ -1,0 +1,4 @@
+#Mon Jul 15 10:07:46 WAT 2019
+base.0=C\:\\Users\\ACER\\Downloads\\xcite\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

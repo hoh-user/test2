@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            style="@style/row_nobg"
+            android:layout_marginBottom="10dp"
+            android:padding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/headline"
+                android:layout_marginBottom="5dp"
+                android:background="@color/ui_dark_blue"
+                android:text="@string/sepa_information"
+                android:textAllCaps="true"
+                android:textColor="@color/ui_white" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/table"
+                android:padding="0dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    style="@style/table_row"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        style="@style/text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/ui_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/iban" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:padding="0dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/account_iban"
+                            style="@style/input"
+                            android:layout_margin="0dp"
+                            android:hint="@string/iban" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        style="@style/text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/ui_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bic" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:padding="0dp">
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        android:padding="0dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/bic"
+                            style="@style/input"
+                            android:hint="@string/bic" />
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        style="@style/text"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/ui_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_holder" />
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:padding="0dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        android:layout_margin="0dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/account_holder"
+                            style="@style/input"
+                            android:layout_margin="0dp"
+                            android:hint="@string/account_holder" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ui_white">
+
+                    <CheckBox
+                        android:id="@+id/account_sepa"
+                        style="@style/checkbox"
+                        android:text="@string/sepa_clause" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

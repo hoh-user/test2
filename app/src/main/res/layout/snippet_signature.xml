@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/row_dark"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/ui_blue">
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/headline"
+                android:background="@color/ui_dark_blue"
+                android:text="@string/ordering"
+                android:textColor="@color/ui_white" />
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/table_blue"
+                android:layout_marginBottom="10dp"
+                android:padding="0dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    style="@style/row_nobg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp">
+
+                    <CheckBox
+                        android:id="@+id/ordering"
+                        style="@style/checkbox"
+                        android:background="@color/ui_white"
+                        android:text="@string/ordering_clause" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_marketing"
+                    style="@style/table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:padding="0dp">
+
+                    <CheckBox
+                        android:id="@+id/marketing"
+                        style="@style/checkbox"
+                        android:background="@color/ui_white"
+                        android:text="@string/marketing_clause" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/row_dark"
+            android:layout_marginBottom="5dp">
+
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/table"
+                android:padding="0dp"
+                android:paddingLeft="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    style="@style/table_row_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="0dp">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        style="@style/headline"
+                        android:background="@color/ui_dark_blue"
+                        android:paddingBottom="0dp"
+                        android:text="@string/signature"
+                        android:textColor="@color/ui_white" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/table"
+                android:stretchColumns="*">
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageSignature"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        app:srcCompat="@color/colorLightGray2" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_blue"
+    tools:context=".Views.Contract">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/header_toolbar" />
+
+        <ScrollView
+            style="@style/scrollview"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    style="@style/row_nobg"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/headline"
+                        android:layout_width="match_parent"
+                        android:background="@color/ui_dark_blue"
+                        android:text="@string/personal_customer_data"
+                        android:textColor="@color/ui_white" />
+
+                    <TableLayout
+                        style="@style/table"
+                        android:padding="0dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:layout_width="69dp"
+                                android:padding="3dip"
+                                android:text="@string/salutation"
+                                android:textColor="@color/ui_white"
+                                android:textSize="@dimen/default_text_size" />
+
+                            <Spinner
+                                android:id="@+id/salutation"
+                                style="@style/spinner"
+                                android:layout_height="wrap_content"
+                                android:background="@color/ui_white"
+                                android:padding="8dp" />
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="2dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/lastname"
+                                    style="@style/input"
+                                    android:hint="@string/lastname" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/firstname"
+                                    style="@style/input"
+                                    android:hint="@string/firstname" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="2dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/street"
+                                    style="@style/input"
+                                    android:layout_marginRight="2dp"
+                                    android:hint="@string/street" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/housenumber"
+                                    style="@style/input"
+                                    android:hint="@string/housenumber" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="2dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/zip"
+                                    style="@style/input"
+                                    android:hint="@string/zip" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/city"
+                                    style="@style/input"
+                                    android:hint="@string/city" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="2dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/email"
+                                    style="@style/input"
+                                    android:hint="@string/email" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/birthday"
+                                    style="@style/input"
+                                    android:focusableInTouchMode="false"
+                                    android:hint="@string/birthday"
+                                    android:onClick="showDatePickerDialog" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="2dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/phone"
+                                    style="@style/input"
+                                    android:hint="@string/phone" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/mobil"
+                                    style="@style/input"
+                                    android:hint="@string/mobil" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/row_nobg"
+                    android:layout_marginBottom="10dp">
+
+                    <CheckBox
+                        android:id="@+id/toggle_invoice_address"
+                        style="@style/checkbox_headline"
+                        android:background="@color/ui_white"
+                        android:text="@string/invoice_address" />
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/container_invoice_recipient"
+                        style="@style/table"
+                        android:padding="0dp"
+                        android:stretchColumns="*"
+                        android:visibility="gone">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_span="2"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/invoice_recipient"
+                                    style="@style/input"
+                                    android:hint="Name" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/invoice_recipient_street"
+                                    style="@style/input"
+                                    android:hint="@string/street" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/invoice_recipient_housenumber"
+                                    style="@style/input"
+                                    android:hint="@string/housenumber" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/invoice_recipient_zip"
+                                    style="@style/input"
+                                    android:hint="@string/zip" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/invoice_recipient_city"
+                                    style="@style/input"
+                                    android:hint="@string/city" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/row_nobg"
+                    android:layout_marginBottom="15dp">
+
+                    <CheckBox
+                        android:id="@+id/toggle_business_information"
+                        style="@style/checkbox_headline"
+                        android:background="@color/ui_white"
+                        android:text="@string/business_information" />
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/container_business_information"
+                        style="@style/table"
+                        android:padding="0dp"
+                        android:stretchColumns="*"
+                        android:visibility="gone">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_span="2"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/company"
+                                    style="@style/input"
+                                    android:hint="@string/company" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/company_register_number"
+                                    style="@style/input"
+                                    android:hint="@string/register_number" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/company_register_court"
+                                    style="@style/input"
+                                    android:hint="@string/register_court" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/row_nobg"
+                    android:layout_marginBottom="10dp"
+                    android:padding="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/headline"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/ui_dark_blue"
+                        android:text="@string/sepa_information"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ui_white" />
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table"
+                        android:padding="0dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/account_iban"
+                                    style="@style/input"
+                                    android:layout_margin="0dp"
+                                    android:hint="@string/iban" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:padding="0dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/bic"
+                                    style="@style/input"
+                                    android:hint="@string/bic" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_margin="0dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/account_holder"
+                                    style="@style/input"
+                                    android:layout_margin="0dp"
+                                    android:hint="@string/account_holder" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/ui_white">
+
+                            <CheckBox
+                                android:id="@+id/account_sepa"
+                                style="@style/checkbox"
+                                android:text="@string/sepa_clause" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/row_nobg"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/headline"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/ui_dark_blue"
+                        android:text="@string/power_supply_information"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ui_white" />
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table"
+                        android:padding="0dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/electric_meter_number"
+                                    style="@style/input"
+                                    android:hint="@string/electric_meter_number" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/electric_meter_reading"
+                                    style="@style/input"
+                                    android:hint="@string/electric_meter_reading" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <CheckBox
+                                android:id="@+id/moving_in"
+                                style="@style/checkbox"
+                                android:layout_marginRight="2dp"
+                                android:background="@color/ui_white"
+                                android:gravity="center_vertical"
+                                android:text="@string/moving_in"
+                                android:textColor="@color/ui_grey" />
+
+                            <CheckBox
+                                android:id="@+id/distributor_change"
+                                style="@style/checkbox"
+                                android:background="@color/ui_white"
+                                android:gravity="center_vertical"
+                                android:text="@string/distributor_change"
+                                android:textColor="@color/ui_grey" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/moving_in_date_container"
+                            style="@style/table_row"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp"
+                            android:visibility="gone">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_span="2"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/moving_in_date"
+                                    style="@style/input"
+                                    android:focusableInTouchMode="false"
+                                    android:hint="@string/moving_in_date"
+                                    android:onClick="showDatePickerDialog" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/distributor_change_date_container"
+                            style="@style/table_row"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_span="2"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/distributor_change_date"
+                                    style="@style/input"
+                                    android:focusableInTouchMode="false"
+                                    android:hint="@string/distributor_change_date"
+                                    android:onClick="showDatePickerDialog" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_marginRight="2dp"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/distributor_name"
+                                    style="@style/input"
+                                    android:hint="@string/distributor_name" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/distributor_number"
+                                    style="@style/input"
+                                    android:hint="@string/distributor_number" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/input_layout"
+                                android:layout_span="2"
+                                app:hintEnabled="false">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:id="@+id/power_consumption"
+                                    style="@style/input"
+                                    android:hint="@string/power_consumption" />
+                            </android.support.design.widget.TextInputLayout>
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <include layout="@layout/snippet_productinformation" />
+
+                <LinearLayout
+                    style="@style/row_dark"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/ui_blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        style="@style/headline"
+                        android:background="@color/ui_dark_blue"
+                        android:text="@string/ordering"
+                        android:textColor="@color/ui_white" />
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table_blue"
+                        android:layout_marginBottom="10dp"
+                        android:padding="0dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/row_nobg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp">
+
+                            <CheckBox
+                                android:id="@+id/ordering"
+                                style="@style/checkbox"
+                                android:background="@color/ui_white"
+                                android:text="@string/ordering_clause" />
+                        </TableRow>
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:padding="0dp">
+
+                            <CheckBox
+                                android:id="@+id/marketing"
+                                style="@style/checkbox"
+                                android:background="@color/ui_white"
+                                android:text="@string/marketing_clause" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/row_dark"
+                    android:layout_marginBottom="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table"
+                        android:padding="0dp"
+                        android:paddingLeft="0dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="0dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/table_row_headline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:paddingLeft="0dp"
+                            android:paddingEnd="0dp"
+                            android:paddingRight="0dp"
+                            android:paddingBottom="0dp">
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                style="@style/headline"
+                                android:background="@color/ui_dark_blue"
+                                android:paddingBottom="0dp"
+                                android:text="@string/signature"
+                                android:textColor="@color/ui_white" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageSignature"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                app:srcCompat="@color/colorLightGray2" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/row_nobg">
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        style="@style/table"
+                        android:layout_marginBottom="60dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            style="@style/table_row"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/buttonSave"
+                                style="@style/button_blue"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/save_contract" />
+
+                            <Button
+                                android:id="@+id/buttonSaveAndSync"
+                                style="@style/button_blue"
+                                android:text="@string/save_and_sync_contract" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>

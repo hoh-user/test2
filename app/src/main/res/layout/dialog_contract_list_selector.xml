@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_blue"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_menu_add_gas"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/product_type_gas" />
+
+                <ImageButton
+                    android:id="@+id/btn_menu_add_gas_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_content_copy_white_24dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_menu_add_power"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/product_type_power" />
+
+                <ImageButton
+                    android:id="@+id/btn_menu_add_power_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_content_copy_white_24dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_menu_add_kaution"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/product_type_kaution" />
+
+                <ImageButton
+                    android:id="@+id/btn_menu_add_kaution_image"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_content_copy_white_24dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="0dp">
+
+                <Button
+                    android:id="@+id/btn_menu_close"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/password_dialog_cancel" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

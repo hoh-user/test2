@@ -1,0 +1,263 @@
+<resources>
+    <string name="app_name">X-CITE smart</string>
+    <string name="app_contract_list">X-CITE smart -> Verträge</string>
+    <string name="app_contract_add">X-CITE smart -> Verträge -> Neuer Vertrag</string>
+    <string name="app_contract_edit">X-CITE smart -> Verträge -> Vertrag bearbeiten</string>
+    <string name="app_settings">X-CITE smart -> Einstellungen</string>
+    <string name="app_api_settings">X-CITE smart -> API Einstellungen</string>
+    <string name="app_sync">X-CITE smart -> Synchronisieren</string>
+    <string name="app_dashboard">X-CITE smart -> Dashboard</string>
+    <string name="title_home">Home</string>
+    <string name="title_contract_add">Neuer Auftrag</string>
+    <string name="title_contract_list">Übersicht</string>
+    <string name="title_sync">Synchronisation</string>
+    <string name="title_admin">Einstellungen</string>
+    <string name="title_admin_api_settings">API Einstellungen</string>
+    <string name="title_product_information">Produkt-Infos</string>
+    <string name="sync_home">Synchronisation</string>
+    <string name="sync_description">Drücken Sie den Button um mit der Synchronisation zu beginnen.</string>
+    <string name="sync_warning">Achtung: Beim Synchroniseren werden alle lokalen Daten gelöscht. Bitte führen Sie die Synchronisation nur zum Einrichten der Datenbank aus.</string>
+    <string name="contract_add_home">Vertrag anlegen</string>
+    <string name="contract_list_home">Aufträge Übersicht</string>
+    <string name="button_load_database">Datenbank herunterladen</string>
+    <string-array name="salutation_array">
+        <item>Bitte wählen</item>
+        <item>Herr</item>
+        <item>Frau</item>
+    </string-array>
+    <string-array name="title_array">
+        <item>Bitte wählen</item>
+        <item>Prof.</item>
+        <item>Doctor</item>
+    </string-array>
+    <string name="show">Anzeigen</string>
+    <string name="edit">Bearbeiten</string>
+    <string name="add_image">Bild aufnehmen</string>
+    <string name="show_image">Bild anzeigen</string>
+    <string name="syncronisation">Synchronisieren</string>
+    <string name="duplicate">Duplizieren</string>
+    <string name="delete">Löschen</string>
+    <string name="close">Schließen</string>
+    <string name="personal_customer_data">Persönliche Daten Kundin/Kunde</string>
+    <string name="personal_customer_data_kaution">Daten Mieter/Antragssteller</string>
+    <string name="salutation">Anrede</string>
+    <string name="title">Titel</string>
+    <string name="lastname">Nachname</string>
+    <string name="firstname">Vorname</string>
+    <string name="street">Straße</string>
+    <string name="housenumber">Hausnr.</string>
+    <string name="zip">PLZ</string>
+    <string name="city">Ort</string>
+    <string name="email">E-Mail</string>
+    <string name="birthday">Geburtsdatum</string>
+    <string name="phone">Telefon</string>
+    <string name="mobil">Mobil</string>
+    <string name="whg_miete">Miete</string>
+    <string name="whg_kaution">Kaution</string>
+    <string name="whg_temp">Mietverhältnis befristet?</string>
+    <string name="whg_kuendigung">Ist das Mietverhältnis gekündigt?</string>
+    <string name="whg_mietverzug">Haben Sie Ihre Miete mehr als einmal unpünktlich gezahlt?</string>
+    <string name="whg_schaeden">Liegen aktuell Schäden am Mietobjekt vor?</string>
+    <string name="whg_kaution_no">Vereinbarte Mietkaution unvollständig erbracht?</string>
+    <string name="whg_kaution_bes_no">Mietkaution bereits teilweise/vollständig verbraucht?</string>
+    <string name="whg_versand">Wohin soll die Bürgschaft versendet werden?</string>
+    <string-array name="whg_versand_array">
+        <item>Bitte wählen</item>
+        <item>an die alte Adresse</item>
+        <item>an die neue Adresse</item>
+        <item>an den Vermieter</item>
+    </string-array>
+    <string name="invoice_address">Abweichende Rechnungsadresse</string>
+    <string name="invoice_recipient">Rechnungsempfänger</string>
+    <string name="business_information">Bei Gewerbekunden: Angaben zur Firma</string>
+    <string name="company">Firma</string>
+    <string name="register_number">Registernummer</string>
+    <string name="register_court">Registergericht</string>
+    <string name="sepa_information">Sepa-Lastschriftmandat</string>
+    <string name="iban">IBAN</string>
+    <string name="bic">BIC</string>
+    <string name="account_holder">Name des Kontoinhabers</string>
+    <string name="sepa_clause">Ich ermächtige die Süwag, Gläubiger-Identikationsnummer DE3000000000062091, Zahlungen von meinem Konto mittels Lastschrift einzuziehen. Zugleich weise ich mein Kreditinstitut an, die von der Süwag auf mein Konto gezogenen Lastschriften einzulösen. Hinweis: Ich kann innerhalb von acht Wochen, beginnend mit dem Belastungsdatum, die Erstattung des belasteten Betrags verlangen. Es gelten dabei die mit meinem Kreditinstitut vereinbarten Bedingungen. Die Mandatsreferenznummer wird mir von der Süwag separat mitgeteilt.</string>
+    <string name="sepa_clause_kaution">Ich ermächtige die R+V Versicherung Zahlungen von meinem Konto mittels Lastschrift einzuziehen.</string>
+    <string name="power_supply_information">Angaben zur Stromlieferung</string>
+    <string name="natural_gas_information">Angaben zur Erdgaslieferung</string>
+    <string name="leaser_information">Angaben zum 2.Mieter (optional)</string>
+    <string name="lessor_information">Angaben zum Vermieter</string>
+    <string name="kaution_information">Angaben zur Kaution</string>
+    <string name="kaution_information_description">Kaution wir für folgende Wohnung benötigt</string>
+    <string name="kaution_optionen">Weitere Optionen</string>
+    <string name="name">Name</string>
+    <string name="electric_meter_number">Stromzählernummer</string>
+    <string name="natural_gas_meter_number">Erdgaszählernummer</string>
+    <string name="electric_meter_reading">Zählerstand</string>
+    <string name="moving_in">Neueinzug</string>
+    <string name="kaution_neu">Kaution für neues Mietobjekt</string>
+    <string name="moving_in_date">Einzugsdatum</string>
+    <string name="distributor_change">Versorgerwechsel</string>
+    <string name="kaution_umwandeln">Kaution umwandeln</string>
+    <string name="distributor_change_date">Wunschtermin</string>
+    <string name="kaution_mietbegin">Mietbeginn am</string>
+    <string name="kaution_mietvertrag">Mietvertrag unterzeichnet am</string>
+    <string name="distributor_name">Bisheriger Stromlieferant</string>
+    <string name="distributor_name_gas">Bisheriger Erdgaslieferant</string>
+    <string name="distributor_number">Bisherige Stomkundennummer</string>
+    <string name="distributor_number_gas">Bisherigerige Erdgaskundennummer</string>
+    <string name="power_consumption">Stromverbrauch des Vorjahres in kWh</string>
+    <string name="natural_gas_consumption">Erdgasverbrauch des Vorjahres in kWh</string>
+    <string name="ordering_clause">Ich beauftrage die Süwag mit der Lieferung des gesamten Bedarfs an elektrischer Energie in Niederspannung ohne registrierende Leistungsmessung für den Eigenverbrauch (in den AGB „Energielieferung“ genannt) für den genannten Stromzähler. Grundlage dafür sind neben diesem Auftrag die Allgemeinen Energielieferbedingungen Sondervertrag Süwag (AGB). Ich bevollmächtige die Süwag zur Kündigung meines bestehenden Stromliefervertrags für die genannte Lieferstelle. Die Süwag ist auch berechtigt, Untervollmachten zu erteilen. Die Allgemeinen Geschäftsbedingungen, die Widerrufsbelehrung und die Informationen zum Datenschutz habe ich zur Kenntnis genommen und akzeptiert.</string>
+    <string name="ordering_clause_natural_gas">Ich beauftrage die Süwag mit der Lieferung des gesamten Bedarfs an Erdgas ohne registrierende Leistungsmessung für den Eigenverbrauch (in den AGB „Energielieferung“ genannt) für den genannten Erdgaszähler. Grundlage dafür sind neben diesem Auftrag die Allgemeinen Energielieferbedingungen Sondervertrag Süwag (AGB). Ich bevollmächtige die Süwag zur Kündigung meines bestehenden Erdgasliefervertrags für die genannte Lieferstelle. Die Süwag ist auch berechtigt, Untervollmachten zu erteilen. Die Allgemeinen Geschäftsbedingungen, die Widerrufsbelehrung und die Informationen zum Datenschutz habe ich zur Kenntnis genommen und akzeptiert.</string>
+    <string name="ordering_clause_kaution">Hiermit wird die plusForta GmbH als Makler bevollmächtigt. Die Tätigkeit der plusForta GmbH umfasst unter anderem die Vermittlung der
+Bürgschaft für private Mietkaution sowie die Prüfung, Bearbeitung und Weiterleitung der eingereichten Unterlagen.</string>
+    <string name="marketing_clause">Ich bin damit einverstanden, von der Süwag telefonisch oder per SMS über Angebote und Produkte aus den Bereichen Strom, Gas, Wärme, Elektromobilität und Energieeffizienz informiert zu werden. Ich stimme Befragungen zu Produkten und der Servicequalität der Süwag zu. Meine Vertragsdaten können dazu auch für einen Zeitraum von bis zu 24 Monaten nach Vertragsende zur individuellen Kundenberatung verwendet werden. Meine Vertrags-daten sind die bei der Süwag zur Vertragserfüllung (Vertragsabschluss, -änderung, -beendigung, Abrechnung) erforderlichen und freiwillig angegebenen Daten. Ich bin berechtigt, dieser Nutzung meiner Daten jederzeit gegenüber der Süwag über die oben angegebenen Kontaktdaten (z. B. per Brief, Telefon, Fax, E-Mail) zu widersprechen, ohne dass hierfür andere als die Übermittlungskosten nach den Basistarifen entstehen.</string>
+    <string name="save_contract">Als Entwurf speichern</string>
+    <string name="close_contract">Schließen</string>
+    <string name="save_and_sync_contract">In Ausgangskorb speichern</string>
+    <string name="reset_signature">Unterschrift löschen</string>
+    <string name="ordering">Auftragserteilung und Einverständniserklärung</string>
+    <string name="username">Benutzername</string>
+    <string name="password">Passwort</string>
+    <string name="login">Jetzt ganz einfach anmelden!</string>
+    <string name="login_headline">Anmelden</string>
+    <string name="login_failed">Anmeldung fehlgeschlagen. Bitte überprüfen Sie Ihre Zugangsdaten.</string>
+    <string name="api_key">API Schlüssel</string>
+    <string name="api_settings">API Einstellungen</string>
+    <string name="admin_settings">Weitere Einstellungen</string>
+    <string name="makler_settings">Makler Daten</string>
+    <string name="makler_name">E-Mail</string>
+    <string name="makler_password">Passwort</string>
+    <string name="cleanup_settings">Löschen von Verträgen</string>
+    <string name="cleanup_button_30">Älter als 30 Tage</string>
+    <string name="cleanup_button_synced">Alle synchronisierten Verträge</string>
+    <string name="cleanup_button_all">Alle Verträge</string>
+    <string name="signature">Unterschrift</string>
+    <string name="product_information">Preisabfrage</string>
+    <string name="product_information_type">Wählen Sie den Vertragstyp.</string>
+    <string name="product_information_description">Geben Sie hier Ihre PLZ ein um einen Tarif abzufragen.</string>
+    <string name="product_type_power">Stromvertrag</string>
+    <string name="product_type_kaution">Kautionsvertrag</string>
+    <string name="product_type_gas">Gasvertrag</string>
+    <string name="request">Abfragen</string>
+    <string name="button_create_product_information">Übernehmen in neuen Vertrag</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_sign">Get Signature</string>
+    <string name="dialog_title">SIGN HERE</string>
+    <string name="hint_cancel">Cancel</string>
+    <string name="hint_clear">Clear</string>
+    <string name="hint_save">Save</string>
+    <string name="password_dialog_message">Um die Einstellungen zu Verändern benötigen Sie erweiterte Rechte. Bitte geben Sie das Passwort ein um fortzufahren:</string>
+    <string name="password_dialog_error_message">Passwort nicht korrekt.</string>
+    <string name="password_dialog_cancel">Abbrechen</string>
+    <string name="password_dialog_login">Weiter</string>
+
+    <string name="database_reset">Datenbank zurücksetzen</string>
+
+    <string name="sync_all">Alle Verträge abschließen</string>
+    <string name="sync_cloud">Verträge aktualisieren</string>
+
+    <string name="toolbar_first">SMART</string>
+    <string name="btn_dashboard_add_contract_label">Neuer Stromvertrag</string>
+    <string name="btn_dashboard_add_contract_label_2">Neuer Gasvertrag</string>
+    <string name="btn_dashboard_add_contract_label_3">Neuer Kautionsvertrag</string>
+    <string name="btn_dashboard_list_contract_label">Verträge Übersicht</string>
+    <string name="btn_dashboard_sync_label">Synchronisieren</string>
+    <string name="btn_dasbhoard_search_label">Produkt Infos</string>
+    <string name="btn_dashboard_settings_label">Einstellungen</string>
+
+    <string name="dialog_back">Zurück</string>
+    <string name="dialog_back_text">Wenn Sie fortfahren gehen alle nicht gespeicherten Daten verloren. Möchten Sie fortfahren?</string>
+    <string name="dialog_next">Weiter</string>
+    <string name="dialog_cancel">Abbrechen</string>
+
+    <string name="dialog_makler">Makler nicht gesetzt</string>
+    <string name="dialog_makler_text">Es wurden keine Makler Daten gefunden, bitte wenden Sie sich an den Administrator.</string>
+
+    <string name="dialog_error">Fehler aufgetreten</string>
+    <string name="dialog_error_text">Es ist ein interner Fehler aufgetreten. Bitte starten Sie die Anwendung neu.</string>
+    <string name="dialog_error_delete_text">Beim Löschen ist ein Fehler aufgetreten.</string>
+    <string name="dialog_error_api_key">Bitte geben Sie einen API Key ein um die Daten zu aktualisieren</string>
+    <string name="dialog_error_save">Die Daten konnten nicht gespeichert werden.</string>
+    <string name="dialog_error_response">Unerwarteter Rückgabewert, stellen Sie sicher das Sie mit dem Internet/WLAN verbunden sind</string>
+    <string name="dialog_error_access_data">Bitte überprüfen Sie Ihre Zugangsdaten.</string>
+
+    <string name="dialog_download_contract_complete">Download abgeschlossen</string>
+
+    <string name="dialog_download_contract_complete_no_data_found">Download abgeschlossen</string>
+    <string name="dialog_download_contract_complete_no_data_found_text">Es wurden keine neuen Verträge gefunden.</string>
+
+    <string name="dialog_sync_complete">Synchronisation abgeschlossen</string>
+
+    <string name="dialog_do_sync">Jetzt synchronisieren</string>
+    <string name="dialog_do_sync_text">Bitte stellen Sie sicher das Sie mit dem WLAN verbinden sind bevor Sie die Synchronisation starten. Dieser Prozess kann einzige Zeit in Anpsruch nehmen.</string>
+
+    <string name="dialog_sync_confirmation">Synchronisieren</string>
+    <string name="dialog_sync_confirmation_text">Nach der Synchronisation können keine weiteren Änderungen am Vertrag durchgeführt werden. Bitte stellen Sie sicher das alle eingegebenen Daten korrekt sind bevor Sie fortfahren.</string>
+
+    <string name="dialog_duplication_failed">Duplizieren fehlgeschlagen</string>
+    <string name="dialog_duplication_failed_text">Beim duplizieren des Vertrages ist ein Fehler aufgetreten.</string>
+
+    <string name="dialog_duplication_confirmed">Duplizieren erfolgreich</string>
+    <string name="dialog_duplication_confirmed_text">Der Vertrag wurde erfolgreich dupliziert.</string>
+
+    <string name="dialog_duplication_confirmation">Duplizieren</string>
+    <string name="dialog_duplication_confirmation_text">Wenn Sie fortfahren werden die Inhalte des Vertrages dupliziert. Bilder werden nicht dupliziert.</string>
+
+    <string name="dialog_download_information">Verträge Synchronisieren</string>
+    <string name="dialog_download_information_text">Es wird ein abgleich aller Verträge durchgeführt. Dabei werden die lokalen als auch die Remote-Verträge aktualisiert.</string>
+
+    <string name="dialog_sync_information">Verträge abschließen</string>
+    <string name="dialog_sync_information_text">Wenn Sie fortfahren werden alle Verträge zum Server gesendet und falls möglich abgeschlossen. Eine Änderung der Formulare ist anschließend nicht mehr möglich.</string>
+
+    <string name="dialog_sync_complete_confirmation">Synchronisierung erfolgreich</string>
+    <string name="dialog_sync_error">Beim Synchronisieren der Daten ist ein Fehler aufgetreten.</string>
+
+    <string name="dialog_wlan_error">Keine WLAN Verbindung</string>
+    <string name="dialog_wlan_error_text">Es konnte keine WLAN Verbindung gefunden werden. Bitte verbinden Sie sich zunächst mit dem WLAN und starten Sie anschließend die Synchronisation erneut.</string>
+
+    <string name="dialog_wlan_confirmation">WLAN</string>
+    <string name="dialog_wlan_confirmation_text">Bitte stellen Sie sicher das Ihre WLAN Verbindung aktiviert und verbunden ist bevor sie fortfahren.</string>
+
+    <string name="dialog_delete_contract">Verträge löschen?</string>
+    <string name="dialog_delete_contract_30">Wenn Sie fortfahren werden alle Verträge gelöscht die älter als 30 Tage sind und die bereits synchronisiert wurden.</string>
+    <string name="dialog_delete_contract_synced">Wenn Sie fortfahren werden alle Verträge gelöscht die bereits synchronisiert wurden.</string>
+
+    <string name="dialog_delete_contract_confirmed">Verträge gelöscht</string>
+    <string name="dialog_delete_contract_all">Wenn Sie fortfahren werden alle Verträge gelöscht, auch diese die nicht synchronisiert wurden.</string>
+
+    <string name="dialog_delete_single_contract">Vertrag gelöscht</string>
+    <string name="dialog_delete_single_contract_text">Der Vertrag wurde aus der Datenbank gelöscht.</string>
+
+    <string name="dialog_delete_contract_confirmation">Vertrag löschen?</string>
+    <string name="dialog_delete_contract_confirmation_text">Wenn Sie fortfahren wird der lokale Vertrag aus der Datenbank entfernt.</string>
+
+    <string name="dialog_database_reset">Datenbank zurücksetzen?</string>
+    <string name="dialog_database_reset_text">Alle Daten werden gelöscht und die Datenbank neu initialisiert.</string>
+
+    <string name="dialog_database_reset_confirmed">Datenbank erfolgreich zurückgesetzt</string>
+    <string name="dialog_database_reset_confirmed_text">Die Datenbank wurde erfolgreich zurückgesetzt.</string>
+
+    <string name="dialog_database_update">Datenbank Aktualisierung</string>
+    <string name="dialog_database_update_text">Es wurde ein Update für die Datenbank gefunden. Dieses muss zunächst installiert werden. Bitte beachten Sie das dieser Vorgang einige Zeit in Anspruch nehmen kann.</string>
+
+    <string name="dialog_database_update_confirmed">Datenbank erfolgreich aktualisiert</string>
+    <string name="dialog_database_update_confirmed_text">Die Datenbank wurde erfolgreich aktualisiert.</string>
+
+
+    <string name="dialog_data_saved">Daten gespeichert</string>
+    <string name="dialog_data_saved_text">Die Daten wurden erfolgreich gespeichert.</string>
+
+    <string name="navigation_contract_personal">Daten Mieter/Antragssteller</string>
+    <string name="navigation_contract_bank">Zahlungsinformationen</string>
+    <string name="navigation_contract_product_info">Produkt-Infos</string>
+    <string name="navigation_contract_signature">Unterschrift</string>
+    <string name="navigation_contract_product_strom">Strom-Tarif</string>
+    <string name="navigation_contract_product_gas">Gas-Tarif</string>
+    <string name="navigation_contract_product_leaser">Mieter Daten</string>
+    <string name="navigation_contract_product_lessor">Vermieter Daten</string>
+    <string name="navigation_contract_product_kaution">Miete/Kaution</string>
+    <string name="navigation_contract_invoice">Alternative Rechnungsadresse</string>
+    <string name="navigation_contract_business_information">Angaben zur Firma</string>
+    <string name="navigation_contract_save_draft">Als Entwurf speichern</string>
+    <string name="navigation_contract_save">In Ausgangskorb speichern</string>
+</resources>

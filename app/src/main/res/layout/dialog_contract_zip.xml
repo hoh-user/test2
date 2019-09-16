@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_blue"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/ui_white"
+                    android:layout_weight="1"
+                    android:text="Geben Sie eine PLZ ein um einen Tarif auszuwählen." />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <EditText
+                    android:id="@+id/dialog_contract_zip_input_zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="PLZ eingeben..."
+                    style="@style/input"
+                    android:layout_weight="1"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/dialog_contract_zip_error"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:paddingBottom="20dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/colorRed"
+                    android:layout_weight="1"
+                    android:text="Kein Tarif für die angegebene PLZ gefunden." />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="0dp">
+
+                <Button
+                    android:id="@+id/dialog_contract_zip_btn_close"
+                    style="@style/button_dashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/close" />
+
+                <Button
+                    android:id="@+id/dialog_contract_zip_btn_next"
+                    style="@style/button_dashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="0.5"
+                    android:text="Weiter" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_home" />
+<!--
+    <item
+        android:id="@+id/navigation_contract_add"
+        android:icon="@drawable/ic_contract_add_gray_24dp"
+        android:title="@string/title_contract_add" />
+-->
+    <item
+        android:id="@+id/navigation_contract_list"
+        android:icon="@drawable/ic_list_gray_24dp"
+        android:title="@string/title_contract_list" />
+
+    <item
+        android:id="@+id/navigation_product_information"
+        android:icon="@drawable/ic_search_gray_24dp"
+        android:title="@string/title_product_information" />
+<!--
+    <item
+        android:id="@+id/navigation_sync"
+        android:icon="@drawable/ic_sync_gray_24dp"
+        android:title="@string/title_sync" />
+-->
+    <item
+        android:id="@+id/navigation_admin"
+        android:icon="@drawable/ic_settings_gray_24dp"
+        android:title="@string/title_admin" />
+</menu>

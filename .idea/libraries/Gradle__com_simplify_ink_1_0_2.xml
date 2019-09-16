@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.simplify:ink-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ink-1.0.2.aar/c32abc41aefa23b5649c3cec015d0958/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ink-1.0.2.aar/c32abc41aefa23b5649c3cec015d0958/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.simplify/ink/1.0.2/64ba60dd59a233fbf5ab986458ccfac98d73907a/ink-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

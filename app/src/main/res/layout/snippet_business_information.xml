@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/headline"
+            android:layout_width="match_parent"
+            android:background="@color/ui_dark_blue"
+            android:text="@string/navigation_contract_business_information"
+            android:textColor="@color/ui_white" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/container_business_information"
+            style="@style/table"
+            android:padding="0dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                style="@style/table_row"
+                android:paddingTop="0dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company" />
+
+            </TableRow>
+
+
+            <TableRow
+                style="@style/table_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:padding="0dp">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    android:layout_span="2"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/company"
+                        style="@style/input"
+                        android:hint="@string/company" />
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_number" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_court" />
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    android:layout_marginRight="2dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/company_register_number"
+                        style="@style/input"
+                        android:hint="@string/register_number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/company_register_court"
+                        style="@style/input"
+                        android:hint="@string/register_court" />
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

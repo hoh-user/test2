@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_contract_personal"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_personal" />
+
+    <item
+        android:id="@+id/navigation_contract_product_kaution"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_kaution" />
+
+    <item
+        android:id="@+id/navigation_contract_bank"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_bank" />
+
+    <item
+        android:id="@+id/navigation_contract_save_draft"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_save_draft" />
+
+    <item
+        android:id="@+id/navigation_contract_save"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_save" />
+
+    <item
+        android:id="@+id/navigation_contract_close"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/close_contract"
+        android:visible="false" />
+    <!--<item
+        android:id="@+id/navigation_contract_personal"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_personal" />
+
+    <item
+        android:id="@+id/navigation_contract_invoice"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_invoice" />
+
+    <item
+        android:id="@+id/navigation_contract_business_information"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_business_information" />
+
+    <item
+        android:id="@+id/navigation_contract_bank"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_bank" />
+
+    <item
+        android:id="@+id/navigation_contract_product_gas"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_gas"/>
+
+    <item
+        android:id="@+id/navigation_contract_product_strom"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_strom" />
+
+    <item
+        android:id="@+id/navigation_contract_product_information"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_info" />
+
+    <item
+        android:id="@+id/navigation_contract_product_leaser"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_leaser" />
+
+    <item
+        android:id="@+id/navigation_contract_product_lessor"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_lessor" />
+
+    <item
+        android:id="@+id/navigation_contract_product_kaution"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_product_kaution" />
+
+    <item
+        android:id="@+id/navigation_contract_signature"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_signature" />
+
+    <item
+        android:id="@+id/navigation_contract_save_draft"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_save_draft" />
+
+   <item
+        android:id="@+id/navigation_contract_save"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/navigation_contract_save" />-->
+</menu>

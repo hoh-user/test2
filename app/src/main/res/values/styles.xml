@@ -1,0 +1,213 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorBlue</item>
+        <item name="android:textColorHint">@color/ui_grey</item>
+    </style>
+
+    <style name="scrollview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="spinner"></style>
+
+    <style name="row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="row_nobg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="row_dark">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="table">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="table_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:background">@color/ui_blue</item>
+    </style>
+
+    <style name="table_row">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+    </style>
+
+    <style name="table_row_headline">
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:textColor">@color/ui_white</item>
+        <item name="android:background">@color/ui_dark_blue</item>
+        <item name="android:textSize">@dimen/h1_text_size</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">12dp</item>
+        <item name="android:background">@color/colorDarkGray</item>
+    </style>
+
+    <style name="DividerSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:background">@color/colorDarkGray</item>
+    </style>
+
+    <style name="text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorDarkGray2</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@color/colorLightGray2</item>-->
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:textSize">@dimen/input_text_size</item>
+        <item name="android:textColor">@color/ui_grey</item>
+        <item name="android:background">@drawable/shape_input_white</item>
+    </style>
+
+    <style name="input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/ui_grey</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/ui_white</item>
+    </style>
+
+    <style name="headline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/colorHeadline</item>
+        <item name="android:background">@color/colorLightGray</item>
+        <item name="android:textSize">@dimen/h1_text_size</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="checkbox_headline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/colorHeadlineCheckbox</item>
+        <item name="android:background">@color/colorLightGray</item>
+        <item name="android:textSize">@dimen/h1_text_size</item>
+    </style>
+
+    <style name="checkbox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/ui_grey</item>
+        <item name="android:gravity">top</item>
+    </style>
+    <style name="button_td">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/colorDarkGray2</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+    <style name="button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/ui_blue</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="button_dashboard" parent="button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/ui_dark_blue</item>
+    </style>
+    <style name="button_dashboard_light" parent="button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@color/ui_button_blue</item>
+    </style>
+    <style name="button_login" parent="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/shape_button_blue</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="button_blue" parent="button_login">
+        <item name="android:background">@drawable/shape_button_dark_blue</item>
+    </style>
+    <style name="button_white_outline" parent="button_login">
+        <item name="android:background">@drawable/shape_button_white_outline</item>
+    </style>
+    <style name="button_actionbar" parent="button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/ui_green</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ui_white</item>
+    </style>
+    <style name="button_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorLightGray</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:textColor">@color/colorDarkGray2</item>
+    </style>
+</resources>

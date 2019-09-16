@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButtonCompleteState">#19CC95</color>
+    <color name="colorProgressIndicatorBackground">#BBBBBB</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorStroke">#19CC95</color>
+    <color name="colorRed">#ffcd0a51</color>
+    <color name="colorBlue">#12A7DE</color>
+    <color name="colorHeadline">#FF575656</color>
+    <color name="colorHeadlineCheckbox">#FF575656</color>
+    <color name="colorGreen">#79c130</color>
+    <color name="colorLightGray">#edeaea</color>
+    <color name="colorLightGray2">#f9f9f9</color>
+    <color name="colorDarkGray">#cccccc</color>
+    <color name="colorDarkGray2">#737373</color>
+
+    <!-- New Colors for the UI -->
+    <color name="ui_blue">#FF0ca7de</color>
+    <color name="ui_blue_transparent">#DD00182f</color>
+    <color name="ui_white">#ffffff</color>
+    <color name="ui_grey">#FF575656</color>
+    <color name="ui_green">#FF92bf1f</color>
+    <color name="ui_dark_blue">#00284d</color>
+    <color name="ui_light_blue">#FF96c9ed</color>
+    <color name="ui_button_blue">#FF00457c</color>
+    <color name="ui_blue_logo">#FF00274d</color>
+</resources>

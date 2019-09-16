@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_blue"
+    tools:context=".Views.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/header_toolbar" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_add_contract"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dashboard_add_contract_label" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddContract"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|fill_horizontal|center"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_contract_add_white_48dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_add_contract_2"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dashboard_add_contract_label_2" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddContract_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|fill_horizontal|center"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_contract_add_white_48dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_add_contract_3"
+                    style="@style/button_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dashboard_add_contract_label_3" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonAddContract_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|fill_horizontal|center"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    android:textAlignment="center"
+                    app:srcCompat="@drawable/ic_contract_add_white_48dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_list_contract"
+                    style="@style/button_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dashboard_list_contract_label" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonListContract"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|fill_horizontal|center"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    app:srcCompat="@drawable/ic_list_white_48dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_sync"
+                    style="@style/button_dashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dashboard_sync_label" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonSync"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|fill_horizontal|center"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    app:srcCompat="@drawable/ic_sync_white_48dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="60dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@color/ui_white" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_search"
+                    style="@style/button_dashboard_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dasbhoard_search_label" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonSearch"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|center|fill"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    app:srcCompat="@drawable/ic_search_white_48dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/btn_dashboard_settings"
+                    style="@style/button_dashboard_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_dashboard_settings_label" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonSettings"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="fill_vertical|center|fill"
+                    android:layout_weight="0.3"
+                    android:background="@color/ui_light_blue"
+                    app:srcCompat="@drawable/ic_settings_white_48dp" />
+
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>

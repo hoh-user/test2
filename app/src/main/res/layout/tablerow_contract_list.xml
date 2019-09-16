@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:paddingBottom="2dp"
+            android:background="@color/ui_dark_blue">
+
+            <TextView
+                android:id="@+id/textView_ID"
+                android:layout_weight="0.1"
+                android:width="0dp"
+                android:padding="10dp"
+                android:text="ID"
+                android:textAlignment="center"
+                android:textColor="@color/ui_white" />
+
+            <TextView
+                android:id="@+id/textView_ID_Value"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.2"
+                android:width="0dp"
+                android:background="@color/ui_white"
+                android:padding="10dp"
+                android:text="4"
+                android:textAlignment="center"
+                android:textColor="@color/ui_grey" />
+
+            <TextView
+                android:id="@+id/textView_Name"
+                android:layout_weight="0.3"
+                android:width="0dp"
+                android:padding="10dp"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textColor="@color/ui_white" />
+
+            <TextView
+                android:id="@+id/textView_Name_Value"
+                android:layout_marginRight="60dp"
+                android:layout_weight="0.6"
+                android:width="0dp"
+                android:background="@color/ui_white"
+                android:padding="10dp"
+                android:text="Meier, Uwe"
+                android:textAllCaps="true"
+                android:textColor="@color/ui_grey" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:background="@color/ui_dark_blue">
+
+            <ImageView
+                android:id="@+id/imageView_Status"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                app:srcCompat="@drawable/ic_lock_open_white_24dp" />
+
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_weight="0.3"
+                android:width="0dp"
+                android:lineSpacingExtra="-20dp"
+                android:padding="10dp"
+                android:text="Auftragsdatum"
+                android:textAlignment="center"
+                android:textColor="@color/ui_white" />
+
+            <TextView
+                android:id="@+id/textView_date_value"
+                android:layout_marginRight="60dp"
+                android:layout_weight="0.3"
+                android:width="0dp"
+                android:background="@color/ui_white"
+                android:padding="10dp"
+                android:text="01.01.2019"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/ui_grey" />
+
+            <TextView
+                android:id="@+id/textView_type"
+                android:layout_weight="0.1"
+                android:width="0dp"
+                android:lineSpacingExtra="-20dp"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/ui_white" />
+
+            <TextView
+                android:id="@+id/textView_type_value"
+                android:layout_marginRight="2dp"
+                android:layout_weight="0.2"
+                android:width="10dp"
+                android:background="@color/ui_white"
+                android:padding="10dp"
+                android:text="Strom"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/ui_grey" />
+
+
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_blue"
+    tools:context=".Views.Admin_Api">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/header_toolbar" />
+
+
+        <LinearLayout
+            style="@style/row_nobg"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="0dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/headline"
+                android:layout_width="match_parent"
+                android:background="@color/ui_dark_blue"
+                android:text="@string/api_settings"
+                android:textAllCaps="true"
+                android:textColor="@color/ui_white" />
+
+            <TableLayout
+                style="@style/table_blue"
+                android:padding="0dp"
+                android:stretchColumns="1">
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_marginBottom="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/ui_white"
+                        android:gravity="center_vertical"
+                        android:paddingStart="3dip"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dip"
+                        android:text="@string/api_key"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/ui_white"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/api_key"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            style="@style/input"
+                            android:hint="@string/api_key" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/button_admin_save"
+                        android:layout_width="24dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center"
+                        android:background="@color/ui_white"
+                        app:srcCompat="@drawable/ic_save_gray_24dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="40dp"
+            style="@style/row">
+
+            <TableLayout
+                style="@style/table_blue"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:stretchColumns="1">
+
+                <TableRow
+                    style="@style/table_row_headline"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingBottom="0dp">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/headline"
+                        android:layout_width="match_parent"
+                        android:background="@color/ui_dark_blue"
+                        android:paddingLeft="0dp"
+                        android:paddingEnd="0dp"
+                        android:paddingRight="0dp"
+                        android:paddingBottom="0dp"
+                        android:text="@string/makler_settings"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ui_white" />
+
+                    <ImageButton
+                        android:id="@+id/button_makler_save"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center|end"
+                        android:background="@color/ui_dark_blue"
+                        android:paddingRight="12dp"
+                        app:srcCompat="@drawable/ic_save_gray_24dp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                style="@style/table_blue"
+                android:padding="0dp"
+                android:stretchColumns="1">
+
+                <TableRow style="@style/table_row" android:layout_marginBottom="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/ui_white"
+                        android:gravity="center_vertical"
+                        android:paddingStart="3dip"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dip"
+                        android:text="@string/makler_name"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        android:background="@color/ui_white"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/makler_name"
+                            style="@style/input"
+                            android:hint="@string/makler_name" />
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+                <TableRow style="@style/table_row">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="3dip"
+                        android:paddingLeft="3dip"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="3dip"
+                        android:background="@color/ui_white"
+                        android:layout_marginRight="2dp"
+                        android:text="@string/makler_password"
+                        android:textSize="@dimen/default_text_size" />
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        android:background="@color/ui_white"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/makler_password"
+                            style="@style/input"
+                            android:hint="@string/makler_password"
+                            android:inputType="textPassword"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <!-- CLEANUP SETTINGS -->
+        <TableLayout
+            style="@style/table"
+            android:stretchColumns="*">
+
+            <TableRow style="@style/table_row">
+
+                <Button
+                    android:id="@+id/button_reset"
+                    style="@style/button_blue"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:text="@string/database_reset" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>

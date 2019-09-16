@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ui_blue"
+    tools:context=".Views.Sync"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:id="@+id/scrollLinearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/header_toolbar" />
+
+        <!-- CONTAINER -->
+        <LinearLayout
+            style="@style/row_nobg"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/headline"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="40dp"
+                android:background="@color/ui_dark_blue"
+                android:text="@string/product_information"
+                android:textColor="@color/ui_white" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:text="@string/product_information_type"
+                android:textColor="@color/ui_white" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp">
+
+                    <RadioButton
+                        android:id="@+id/typeGas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFF"
+                        android:text="@string/product_type_gas"
+                        android:textColor="#FFF" />
+
+                    <RadioButton
+                        android:id="@+id/typePower"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#FFF"
+                        android:checked="true"
+                        android:text="@string/product_type_power"
+                        android:textColor="#FFF" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="15dp"
+                android:text="@string/product_information_description"
+                android:textColor="@color/ui_white" />
+
+            <TableLayout
+                style="@style/table_blue"
+                android:padding="0dp"
+                android:stretchColumns="*">
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/ui_white">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/input_layout"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/zip"
+                            style="@style/input"
+                            android:hint="@string/zip" />
+                    </android.support.design.widget.TextInputLayout>
+                </TableRow>
+
+                <TableRow
+                    style="@style/table_row"
+                    android:layout_marginBottom="60dp">
+
+                    <Button
+                        android:id="@+id/buttonRequest"
+                        style="@style/button_blue"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginRight="80dp"
+                        android:text="@string/request" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+        <!-- CONTAINER END -->
+
+        <!-- CONTAINER START -->
+        <include
+            layout="@layout/snippet_productinformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/button_create_product_information"
+            style="@style/button_blue"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="@string/button_create_product_information" />
+    </LinearLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@color/bottom_nav_color"
+        app:itemTextColor="@color/bottom_nav_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+</android.support.constraint.ConstraintLayout>

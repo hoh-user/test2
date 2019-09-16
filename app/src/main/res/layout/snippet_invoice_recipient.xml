@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/headline"
+            android:layout_width="match_parent"
+            android:background="@color/ui_dark_blue"
+            android:text="@string/navigation_contract_invoice"
+            android:textColor="@color/ui_white" />
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/container_invoice_recipient"
+            style="@style/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                style="@style/table_row"
+                android:paddingTop="0dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:layout_span="2"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name" />
+
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:padding="0dp">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    android:layout_span="2"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/invoice_recipient"
+                        style="@style/input"
+                        android:hint="@string/name" />
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/street" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/housenumber" />
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:padding="0dp">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    android:layout_marginRight="2dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/invoice_recipient_street"
+                        style="@style/input"
+                        android:hint="@string/street" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/invoice_recipient_housenumber"
+                        style="@style/input"
+                        android:hint="@string/housenumber" />
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zip" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    style="@style/text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/ui_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city" />
+            </TableRow>
+
+            <TableRow
+                style="@style/table_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:padding="0dp">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    android:layout_marginRight="2dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/invoice_recipient_zip"
+                        style="@style/input"
+                        android:hint="@string/zip" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/input_layout"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/invoice_recipient_city"
+                        style="@style/input"
+                        android:hint="@string/city" />
+                </android.support.design.widget.TextInputLayout>
+            </TableRow>
+
+
+        </TableLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
