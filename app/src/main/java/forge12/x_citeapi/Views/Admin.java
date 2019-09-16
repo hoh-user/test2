@@ -56,7 +56,7 @@ public class Admin extends AppCompatActivity {
      */
     private CallableAction mOnDeleteContractsAll = new CallableAction() {
         @Override
-        public void onCall(Object... args) {
+        public void onCall(Object... argss) {
             if (!(args[0] instanceof AppCompatActivity)) {
                 return;
             }
